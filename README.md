@@ -6,4 +6,9 @@ React, Next.js, Redux, ReduxSaga, Express
 
 ## Contents
 ### Front
- - ant design을 사용해 반응형 그리드 화면 구현
+ * 20/10/31
+  - ant design을 사용해 반응형 그리드 화면 구현
+  - 로그인, 프로필 페이지, 회원가입 페이지 구현 (custom hook 활용)
+
+ * 20/11/01
+  - Redux 연동
