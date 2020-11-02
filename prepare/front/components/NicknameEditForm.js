@@ -1,9 +1,9 @@
 import { Form, Input } from 'antd';
 import React, { useCallback } from 'react';
-//import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import useInput from '../hooks/useInput';
-//import { CHANGE_NICKNAME_REQUEST } from '../reducers/user';
+import { CHANGE_NICKNAME_REQUEST } from '../reducers/user';
 
 const NicknameEditForm = () => {
   const { me } = useSelector((state) => state.user);
