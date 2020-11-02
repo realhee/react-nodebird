@@ -24,6 +24,6 @@ React, Next.js, Redux, ReduxSaga, Express
   - 게시글 구현하기
   - 댓글 구현하기 (CommentForm)
   - 이미지 캐루셀 구현하기 (react-slick)
-### 20/11/03
+#### 20/11/03
   - 글로벌 스타일 적용
   - 게시글 해시태그 링크로 만들기 (정규식 표현 사용)
