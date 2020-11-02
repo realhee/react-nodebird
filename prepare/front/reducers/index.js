@@ -1,36 +1,23 @@
-const initialState = {
-    name: 'hehe',
-    age: 28,
-    password: 'babo',
-};
+import { HYDRATE } from 'next-redux-wrapper';
+import { combineReducers } from 'redux';
 
-// async action creator
-
-// 동적 action creator
-const changeNickname = (data) => {
-    return {
-        type: 'CHANGE_NICKNAME',
-        data,
-    }
-};
-changeNickname('new name');
-
-// // action
-// const changeNickname = {
-//     type: 'CHNGE_NICKNAME',
-//     data: 'booboo',
-// }
+import user from './user';
+import post from './post';
+import comment from './comment';
 
 // reducer : (이전상태, 액션) => 다음상태
-const rootReducer = (state = initialState, action ) => {
-    switch (action.type) {
-        case 'CHANGE_NICKNAME':
-            return {
-                ...state,
-                name: action.data,
-            }
+const rootReducer = combineReducers({
+    index: (state = {}, action) => {
+        switch (action.type) {
+        case HYDRATE:
+            return { ...state, ...action.payload };
+        default:
+            return state;
         }
-    }
-};
+    },
+    user,
+    post,
+    comment,
+});
 
 export default rootReducer;
