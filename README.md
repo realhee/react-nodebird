@@ -13,7 +13,6 @@ React, Next.js, Redux, ReduxSaga, Express
 #### 20/10/31
   - ant design을 사용해 반응형 그리드 화면 구현
   - 로그인, 프로필 페이지, 회원가입 페이지 구현 (custom hook 활용)
-
 #### 20/11/01
   - Redux 연동
 #### 20/11/02
@@ -29,4 +28,9 @@ React, Next.js, Redux, ReduxSaga, Express
   - 게시글 해시태그 링크로 만들기 (정규식 표현 사용)
 #### 20/11/05
   - Redux-saga effects 적용
+
+
 #### 22/03/13
+  - 기존 작업 백업폴더로 이동 (backup/prepare/front)
+  - ant design을 사용해 반응형 그리드 화면 구현
+  - 로그인, 프로필 페이지, 회원가입 페이지 구현 (custom hook 활용)

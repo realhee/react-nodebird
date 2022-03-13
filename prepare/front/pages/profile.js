@@ -1,25 +1,33 @@
-import React from 'react';
-import Head from 'next/head';
-import AppLayout from '../components/AppLayout';
-import NicknameEditForm from '../components/NicknameEditForm';
-import FollowList from '../components/FollowList';
+import React from "react";
+import AppLayout from "../components/AppLayout";
+import NicknameEditForm from "../components/NicknameEditForm";
+import FollowList from "../components/FollowList";
+import Head from "next/head";
 
 const Profile = () => {
-    const followerList = [];
-    const followingList = [];
-    return (
-        <>
-        <Head>
-            <title>내 프로필 | NodeBird</title>
-        </Head>
-        <AppLayout>
-            <NicknameEditForm />
-            <FollowList header="팔로잉 목록" data={followingList} />
-            <FollowList header="팔로워 목록" data={followerList}/>
-        </AppLayout>
-        <div>내 프로필</div>
-        </>
-    );
+  const followingList = [
+    { nickName: "홍길동" },
+    { nickName: "김하니" },
+    { nickName: "김민석" },
+  ];
+  const followerList = [
+    { nickName: "홍길동" },
+    { nickName: "김하니" },
+    { nickName: "김민석" },
+  ];
+
+  return (
+    <>
+      <Head>
+        <title>내 프로필 | NodeBird</title>
+      </Head>
+      <AppLayout>
+        <NicknameEditForm></NicknameEditForm>
+        <FollowList header="팔로잉 목록" data={followingList}></FollowList>
+        <FollowList header="팔로워 목록" data={followerList}></FollowList>
+      </AppLayout>
+    </>
+  );
 };
 
 export default Profile;
