@@ -34,3 +34,7 @@ React, Next.js, Redux, ReduxSaga, Express
   - 기존 작업 백업폴더로 이동 (backup/prepare/front)
   - ant design을 사용해 반응형 그리드 화면 구현
   - 로그인, 프로필 페이지, 회원가입 페이지 구현 (custom hook 활용)
+
+### 22/03/17
+  - Redux 연동
+  - useSelector, useDispatch로 컴포넌트 별 reducer 적용하기
