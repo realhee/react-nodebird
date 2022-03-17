@@ -38,3 +38,4 @@ React, Next.js, Redux, ReduxSaga, Express
 ### 22/03/17
   - Redux 연동
   - useSelector, useDispatch로 컴포넌트 별 reducer 적용하기
+  - middleware & DevTools 적용
