@@ -11,10 +11,6 @@ const configureStore = () => {
       ? compose(applyMiddleware(...middlewares))
       : composeWithDevTools(applyMiddleware(...middlewares));
   const store = createStore(reducer, enhancer);
-  store.dispatch({
-    type: "CHANGE_NICKNAME",
-    data: "choi",
-  });
   return store;
 };
 

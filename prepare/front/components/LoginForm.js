@@ -3,7 +3,7 @@ import { Form, Input, Button } from "antd";
 import Link from "next/link";
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
-import { loginAction } from "../reducers";
+import { loginAction } from "../reducers/user";
 
 const ButtonWrapper = styled.div`
   margin-top: 10px;
@@ -26,13 +26,15 @@ const LoginForm = () => {
     setPassword(e.target.value);
   }, []);
 
-  const onSubmitForm = useCallback(
-    (e) => {
-      console.log({ id, password });
-      dispatch(loginAction({ id, password }));
-    },
-    [id, password]
-  );
+  const onSubmitForm = useCallback(() => {
+    console.log({ id, password });
+    dispatch(
+      loginAction({
+        id,
+        password,
+      })
+    );
+  }, [id, password]);
 
   return (
     <FormWrapper onFinish={onSubmitForm}>

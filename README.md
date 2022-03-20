@@ -39,3 +39,6 @@ React, Next.js, Redux, ReduxSaga, Express
   - Redux 연동
   - useSelector, useDispatch로 컴포넌트 별 reducer 적용하기
   - middleware & DevTools 적용
+
+### 22/03/20
+  - Reducer 구조 분리 (combineReducers)
